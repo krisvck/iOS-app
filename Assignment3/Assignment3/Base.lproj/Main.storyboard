@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type Ice Cream Flavors Below:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oM3-Vw-EKw">
+                                <rect key="frame" x="28" y="101" width="361" height="37"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Flavor 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ut-L8-Pf6">
+                                <rect key="frame" x="49" y="225" width="316" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Flavor 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hzJ-M1-6da">
+                                <rect key="frame" x="49" y="350" width="316" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logged Flavors:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvE-hx-5Qf">
+                                <rect key="frame" x="49" y="647" width="316" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182" id="Wiq-7n-nuT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lix-ip-dc9">
+                                <rect key="frame" x="118" y="504" width="160" height="55"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <state key="normal" title="Log it!"/>
+                                <connections>
+                                    <action selector="logButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2MD-dA-pFt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lix-ip-dc9" secondAttribute="trailing" constant="136" id="0vm-1A-hGf"/>
+                            <constraint firstItem="oM3-Vw-EKw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="CLR-yZ-cch"/>
+                            <constraint firstItem="oM3-Vw-EKw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="Fuh-Na-3cL"/>
+                            <constraint firstItem="kvE-hx-5Qf" firstAttribute="top" secondItem="Lix-ip-dc9" secondAttribute="bottom" constant="88" id="HV9-Kq-DNz"/>
+                            <constraint firstItem="9Ut-L8-Pf6" firstAttribute="trailing" secondItem="hzJ-M1-6da" secondAttribute="trailing" id="IK2-RM-OZa"/>
+                            <constraint firstItem="hzJ-M1-6da" firstAttribute="top" secondItem="9Ut-L8-Pf6" secondAttribute="bottom" constant="95" id="VA2-xk-hKW"/>
+                            <constraint firstItem="hzJ-M1-6da" firstAttribute="leading" secondItem="kvE-hx-5Qf" secondAttribute="leading" id="Vhx-rG-TQo"/>
+                            <constraint firstItem="9Ut-L8-Pf6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="pui-Ta-fLM"/>
+                            <constraint firstItem="9Ut-L8-Pf6" firstAttribute="leading" secondItem="hzJ-M1-6da" secondAttribute="leading" id="spv-dD-vTX"/>
+                            <constraint firstItem="Lix-ip-dc9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="txo-cn-iVg"/>
+                            <constraint firstItem="9Ut-L8-Pf6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wk1-yH-g7p"/>
+                            <constraint firstItem="9Ut-L8-Pf6" firstAttribute="top" secondItem="oM3-Vw-EKw" secondAttribute="bottom" constant="87" id="xq9-cu-zQQ"/>
+                            <constraint firstItem="hzJ-M1-6da" firstAttribute="trailing" secondItem="kvE-hx-5Qf" secondAttribute="trailing" id="ysE-Tu-ufx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kvE-hx-5Qf" secondAttribute="bottom" constant="33" id="zTI-RL-7Th"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstTextField" destination="9Ut-L8-Pf6" id="SzJ-Nq-D3S"/>
+                        <outlet property="mainLabel" destination="oM3-Vw-EKw" id="dtq-LE-si2"/>
+                        <outlet property="outputLabel" destination="kvE-hx-5Qf" id="yPM-c3-Oe4"/>
+                        <outlet property="secondTextField" destination="hzJ-M1-6da" id="OHd-t6-leY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.6376811594203" y="24.776785714285712"/>
+        </scene>
+    </scenes>
+</document>
